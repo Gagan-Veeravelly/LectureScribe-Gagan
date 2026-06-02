@@ -1,0 +1,47 @@
+[
+    {
+        "head": "Deadlock",
+        "relation": "causes",
+        "tail": "Resource Allocation Graphs (RAG)"
+    },
+    {
+        "head": "Deadlock",
+        "relation": "relates to",
+        "tail": "Wait-For Graphs"
+    },
+    {
+        "head": "Dekker's Algorithm",
+        "relation": "is a solution to",
+        "tail": "Critical Section Problem (CSP)"
+    },
+    {
+        "head": "Mutual Exclusion",
+        "relation": "is a requirement for",
+        "tail": "solving CSP"
+    },
+    {
+        "head": "Progress",
+        "relation": "is a requirement for",
+        "tail": "solving CSP"
+    },
+    {
+        "head": "Bounded Waiting",
+        "relation": "is a requirement for",
+        "tail": "solving CSP"
+    },
+    {
+        "head": "Peterson's Algorithm",
+        "relation": "is a solution to",
+        "tail": "Critical Section Problem (CSP)"
+    },
+    {
+        "head": "Resource Allocation Graphs (RAG)",
+        "relation": "relates to",
+        "tail": "Deadlock"
+    },
+    {
+        "head": "Wait-For Graphs",
+        "relation": "relates to",
+        "tail": "Deadlock"
+    }
+]
