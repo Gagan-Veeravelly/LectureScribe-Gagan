@@ -1,63 +1,48 @@
-LectureScribe – AI-Powered Lecture Assistant
+# 🎓 LectureScribe
 
-LectureScribe is an AI-powered learning platform that helps students transform lecture materials into structured study resources. The system processes lecture PDFs and transcripts, generates summaries, creates knowledge representations, stores information in a vector database, and enables intelligent question-answering over lecture content.
+> **AI-Powered Lecture Summarizer & Intelligent PDF Q&A**  
+> Transform lecture PDFs into interactive study assistants with RAG-based retrieval, instant summaries, and context-aware answers.
 
-What the Project Does
-1. Lecture Summarization
-Extracts content from lecture PDFs.
-Uses Large Language Models (LLMs) to generate:
-Key concepts
-Important definitions
-Concise summaries
-Exam preparation questions
-2. Knowledge Retrieval
-Splits lecture content into chunks.
-Converts text into embeddings using Sentence Transformers.
-Stores embeddings in ChromaDB vector database.
-Enables semantic search over lecture materials.
-3. AI-Powered Q&A
-Allows users to ask questions about lecture content.
-Retrieves the most relevant chunks using vector similarity search.
-Supports Retrieval-Augmented Generation (RAG)-style workflows.
-4. Knowledge Graph Generation
-Extracts relationships between concepts.
-Visualizes connections through an interactive knowledge graph.
-Helps students understand topic dependencies and concept relationships.
-5. Interactive Learning Interface
-Built using Streamlit.
-Provides a modern web-based interface.
-Includes visualization and study-assistance features.
-AI Concepts Used
+---
 
-This project demonstrates knowledge of:
+## ✨ Features
 
-Large Language Models (LLMs)
-Llama 3.2
-Groq API integration
-Retrieval-Augmented Generation (RAG)
-Document chunking
-Embedding generation
-Semantic retrieval
-Context-aware responses
-Vector Databases
-ChromaDB
-Embedding Models
-Sentence Transformers
-all-MiniLM-L6-v2
-Natural Language Processing (NLP)
-Text summarization
-Information extraction
-Semantic search
-Knowledge Graphs
-Entity relationship extraction
-Graph visualization
-Technologies Used
-Python
-Streamlit
-ChromaDB
-Sentence Transformers
-LangChain
-Groq API
-Llama 3.2
-Plotly
-Graph Visualization Libraries
+- **📄 Smart PDF Ingestion** — Upload lecture notes, research papers, or any PDF; auto-extracts text with layout preservation
+- **🤖 AI Summarization** — Get concise, structured summaries powered by Groq's lightning-fast LLM inference
+- **💬 RAG-Based Q&A** — Ask questions about your content and receive accurate, citation-backed answers
+- **🔍 Semantic Search** — ChromaDB vector store enables precise retrieval of relevant passages
+- **🧠 Concept Extraction** — Automatically identifies key terms, definitions, and relationships
+- **⚡ Optimized Performance** — Lightweight embeddings (sentence-transformers) + cached inference for fast responses
+- **🔒 Privacy-First** — All processing happens locally; your data never leaves your machine
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.11 (required for compatibility)
+- Git
+- A [Groq API key](https://console.groq.com) (free tier available)
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Gagan-Veeravelly/Lecture-Scribe-Final.git
+cd Lecture-Scribe-Final
+
+# 2. Create and activate virtual environment
+python3.11 -m venv venv311
+source venv311/bin/activate  # macOS/Linux
+# OR
+venv311\Scripts\activate     # Windows
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Configure your API key
+mkdir -p .streamlit
+echo 'GROQ_API_KEY = "gsk_your_actual_key_here"' > .streamlit/secrets.toml
+
+# 5. Launch the app
+streamlit run app.py
